@@ -9,3 +9,5 @@ On a more meta level, I need to remind myself not to try to write the entire web
 3) Build up CSS one rule at a time
 
 It's probably also worth confronting my nature as a perfectionist, which has come up before in this class. I think I need to convince myself that this website is more art than code and as such it can't be perfect, by defintion. And that, in addition, I plan to keep updating this website beyond the immediate deadlines of this unit, so I needn't get too bogged down by trying to have it absolutely finished by a certain date.
+
+FYI: The resume you see in my file structure is currently gitignored - I want to update it before posting it live to the web.
