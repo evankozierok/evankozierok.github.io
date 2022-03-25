@@ -98,6 +98,17 @@ h4 {
 
 
 
+.session-log {
+	padding: 1em;
+	margin: 0.5em;
+	background-color: bisque;
+	border: 2px solid black;
+}
+
+.session-log > summary {
+	font-size: 16pt;
+}
+
 .strikeout {
 	text-decoration: line-through;
 }
@@ -105,4 +116,5 @@ h4 {
 .spoilers {
 	color: #a50e0e;
 	font-weight: bold;
+	font-size: 1.5em;
 }
