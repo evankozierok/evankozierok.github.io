@@ -48,6 +48,46 @@ table {
 }
 /* ============================= */
 
+body {
+	margin: 0 auto;
+	max-width: min(960px, 90%);
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0.5em 0;
+}
+
+p {
+	margin: 1em 0;
+}
+
+h1 {
+	font-size: 300%;
+}
+h2 {
+	font-size: 200%;
+}
+h3 {
+	font-size: 150%;
+}
+h4 {
+	font-size: 125%;
+}
+
+.resume-item, .edu-overview, .miscwork-item {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.item-context {
+	text-align: right;
+}
+
+.item-desc {
+	grid-column: 1 / -1;
+}
+
 .menu {
 	display: flex;
 	width: auto;
