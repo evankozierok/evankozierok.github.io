@@ -54,12 +54,13 @@ body {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
-	margin: 0.5em 0;
-}
-
 p {
 	margin: 1em 0;
+	line-height: 1.25em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0.5em 0;
 }
 
 h1 {
@@ -75,13 +76,33 @@ h4 {
 	font-size: 125%;
 }
 
+ol, ul {
+	list-style: disc inside;
+	padding-left: 2em; /* helps with indentation */
+}
+
+
+
 .resume-item, .edu-overview, .miscwork-item {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 2fr 1fr;
+	gap: 1em;
+	padding: 1em;
+}
+
+.resume-item > *, .edu-overview > *, .miscwork-item > * {
+	border: 1px solid black;
+	background-color: #CCC;
+	padding: 1em;
+}
+
+.item-name {
+
 }
 
 .item-context {
 	text-align: right;
+
 }
 
 .item-desc {
@@ -103,6 +124,7 @@ h4 {
 	margin: 0.5em;
 	background-color: bisque;
 	border: 2px solid black;
+	border-radius: 5px;
 }
 
 .session-log > summary {
