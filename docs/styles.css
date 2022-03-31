@@ -81,6 +81,25 @@ ol, ul {
 	padding-left: 2em; /* helps with indentation */
 }
 
+.intro-wrapper {
+	/* display: flex;
+	align-items: flex-start;
+	justify-items: center; */
+	/* position: relative; */
+}
+
+#headshot {
+	max-width: 33%;
+	/* flex: 0 1 25%; */
+	float: left;
+	margin-right: 1em;
+	border-radius: 25%;
+}
+
+.intro {
+	/* flex: 3; */
+}
+
 
 
 .resume-item, .edu-overview, .miscwork-item {
