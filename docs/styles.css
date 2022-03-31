@@ -88,11 +88,24 @@ ol, ul {
 	/* position: relative; */
 }
 
+figure {
+	display: flex;
+	flex-direction: column;
+}
+
+figcaption {
+	text-align: center;
+}
+
 #headshot {
 	max-width: 33%;
 	/* flex: 0 1 25%; */
 	float: left;
 	margin-right: 1em;
+	
+}
+
+#headshot img {
 	border-radius: 25%;
 }
 
