@@ -50,7 +50,7 @@ table {
 
 body {
 	margin: 0 auto;
-	max-width: min(960px, 90%);
+	max-width: min(540px, 90%);
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
