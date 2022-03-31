@@ -144,12 +144,14 @@ figcaption {
 .menu {
 	display: flex;
 	width: auto;
-	height: 50px;
+	height: 2em;
 	justify-content: space-around;
 	align-items: center;
 }
 
-
+.menu div {
+	border: 1px solid black;
+}
 
 .session-log {
 	padding: 1em;
