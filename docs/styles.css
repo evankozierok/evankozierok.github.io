@@ -1,3 +1,6 @@
+/* temporary: will download once I'm happy */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,18 +55,21 @@ table {
 
 body {
 	margin: 0 auto;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: 'Open Sans', sans-serif;
 	max-width: 90%;
+	background-color: #f8f8f8;
+	font-size: 14pt;
+	line-height: 1.25em;
 }
 
 p {
 	margin: 1em 0;
-	line-height: 1.25em;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	margin: 0.5em 0;
 	text-align: center;
+	font-weight: bold;
 }
 
 h1 {
@@ -104,15 +110,33 @@ figure img {
 /* Nav Styles */
 
 .menu {
+	display: grid;
+	height: auto;
+	/* justify-content: space-around; */
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.menu a {
 	display: flex;
-	width: auto;
-	height: 2em;
-	justify-content: space-around;
 	align-items: center;
+	justify-items: center;
+	color: black;
+	text-decoration: none;
+	background-color: #74bcff;
+	border: solid #444444;
+	border-width: 2px 1px;
+}
+
+.menu a:first-child {
+	border-left-width: 2px;
+}
+.menu a:last-child {
+	border-right-width: 2px;
 }
 
 .menu div {
-	border: 1px solid black;
+	text-align: center;
+	width: 100%;
 }
 
 /* Homepage */
@@ -158,8 +182,8 @@ figure img {
 	padding: 1em;
 }
 
-.item-name {
-
+.item-name *:first-child {
+	font-weight: bold;
 }
 
 .item-context {
