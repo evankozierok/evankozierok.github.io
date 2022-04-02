@@ -59,7 +59,7 @@ body {
 	max-width: 90%;
 	background-color: #f8f8f8;
 	font-size: 14pt;
-	line-height: 1.25em;
+	line-height: 1.25;
 }
 
 p {
@@ -67,7 +67,7 @@ p {
 }
 
 h1,h2,h3,h4,h5,h6 {
-	margin: 0.5em 0;
+	margin: 1.5em 0;
 	text-align: center;
 	font-weight: bold;
 }
