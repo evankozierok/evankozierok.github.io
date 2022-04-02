@@ -48,10 +48,12 @@ table {
 }
 /* ============================= */
 
+/* General styles */
+
 body {
 	margin: 0 auto;
-	max-width: min(540px, 90%);
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	max-width: 90%;
 }
 
 p {
@@ -61,6 +63,7 @@ p {
 
 h1,h2,h3,h4,h5,h6 {
 	margin: 0.5em 0;
+	text-align: center;
 }
 
 h1 {
@@ -81,27 +84,43 @@ ol, ul {
 	padding-left: 2em; /* helps with indentation */
 }
 
-.intro-wrapper {
-	/* display: flex;
-	align-items: flex-start;
-	justify-items: center; */
-	/* position: relative; */
-}
-
 figure {
 	display: flex;
 	flex-direction: column;
+	margin: 1em;
 }
 
 figcaption {
 	text-align: center;
+	background-color: #EEE;
+	padding: 0.5em;
+	border-radius: 0 0 5px 5px;
 }
+
+figure img {
+	border-radius: 5px 5px 0 0;
+}
+
+/* Nav Styles */
+
+.menu {
+	display: flex;
+	width: auto;
+	height: 2em;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.menu div {
+	border: 1px solid black;
+}
+
+/* Homepage */
 
 #headshot {
 	max-width: 33%;
 	/* flex: 0 1 25%; */
 	float: left;
-	margin-right: 1em;
 	
 }
 
@@ -109,11 +128,22 @@ figcaption {
 	border-radius: 25%;
 }
 
-.intro {
-	/* flex: 3; */
+/* About me */
+
+.about {
+	display: flex;
+	align-items: center;
 }
 
+.about figure {
+	max-width: 33%;
+}
 
+.about:nth-of-type(even) figure {
+	order: 1;
+}
+
+/* Resume/Miscwork */
 
 .resume-item, .edu-overview, .miscwork-item {
 	display: grid;
@@ -141,17 +171,7 @@ figcaption {
 	grid-column: 1 / -1;
 }
 
-.menu {
-	display: flex;
-	width: auto;
-	height: 2em;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.menu div {
-	border: 1px solid black;
-}
+/* D&D Styles */
 
 .session-log {
 	padding: 1em;
@@ -174,3 +194,24 @@ figcaption {
 	font-weight: bold;
 	font-size: 1.5em;
 }
+
+/* Responsive styles */
+
+/* phones */
+@media screen and (max-width: 480px) {
+	
+}
+
+/* tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	
+}
+
+/* full screens */
+@media screen and (min-width: 769px) {
+	body {
+		max-width: min(768px, 90%);
+	}
+}
+
+/* 
