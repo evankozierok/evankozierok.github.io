@@ -104,7 +104,7 @@ figcaption {
 	border-radius: 0 0 5px 5px;
 }
 
-figure img {
+figure > *:first-child {
 	border-radius: 5px 5px 0 0;
 }
 
@@ -227,10 +227,14 @@ a[href*="github.com"] {
 }
 
 #the-king-of-the-jungle audio::-webkit-media-controls-panel {
+	/* this rule colors the actual controls, 
+	   while the `audio` rule styles the containing block */
 	background-color: #EEE;
-	/* none of these rules work because reasons */
-	border: 1px solid black;
-	border-radius: 100px;
+}
+
+#the-king-of-the-jungle audio {
+	background-color: #EEE;
+	/* border-radius: 0px; */
 	width: 100%;
 }
 
