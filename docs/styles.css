@@ -207,6 +207,11 @@ a[href*="github.com"] {
 	padding: 1em;
 }
 
+.resume-item > figure, .edu-overview > figure, .miscwork-item > figure {
+	margin: 0;
+	grid-column: 1 / -1;
+}
+
 .item-name *:first-child {
 	font-weight: bold;
 }
@@ -218,6 +223,14 @@ a[href*="github.com"] {
 
 .item-desc {
 	grid-column: 1 / -1;
+}
+
+#the-king-of-the-jungle audio::-webkit-media-controls-panel {
+	background-color: #EEE;
+	/* none of these rules work because reasons */
+	border: 1px solid black;
+	border-radius: 100px;
+	width: 100%;
 }
 
 /* D&D Styles */
