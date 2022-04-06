@@ -1,3 +1,7 @@
+Art used following the [Wizards of the Coast Fan Content Policy](https://company.wizards.com/en/legal/fancontentpolicy).
+
+Please note that not all images here are used.
+
 Art Title|Artist Credit
 ---------|-----------
 Jungle|Eva Widermann

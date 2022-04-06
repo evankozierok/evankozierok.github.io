@@ -1,11 +1,13 @@
 # Evan Kozierok's Personal Website
 
-Hello, and welcome to the page for my personal website! It's still really quite early (I've had no time :I ...) so apologies for the barebones look.
+Hello, and welcome to the page for my personal website!
 
 ## Accessing
 
-The website should be live at https://evankozierok.github.io/webs2022spring/, or you can just clone and start at `docs/index.html`. All links should work with the exception of my PDF resume which I need to update and will be procrastinating until the last minute. No special instructions here, it's plain HTML/CSS for the moment.
+The website is accessible live at https://evankozierok.github.io/webs2022spring/.
+
+You can also simply clone the repository and start at `docs/index.html`. The site is currently static HTML/CSS so you should be able to load it in a local browser without any trouble.
 
 ## Assets
 
-I, uh, haven't gotten around to it yet....
+See `assets.md`.
