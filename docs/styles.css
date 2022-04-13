@@ -114,9 +114,14 @@ figure > *:last-child {
 }
 
 .side-by-side {
-	display: grid;
-	
+	display: flex;
+	justify-items: center;	
 }
+
+.side-by-side figure {
+	min-width: 0;
+}
+
 
 a[href*="github.com"] {
 	display: block;
