@@ -281,6 +281,19 @@ a[href*="github.com"] {
 	font-size: 1.5em;
 }
 
+.figtitle {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.figsubtitle {
+	font-size: 0.8em;
+	font-style: italic;
+	/* font-variant: small-caps; */
+	/* text-transform: uppercase; */
+}
+
 /* Responsive styles */
 
 /* phones */
