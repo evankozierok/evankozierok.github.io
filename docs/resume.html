@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Interactive Resume | Evan Kozierok</title>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    
 </head>
 <body>
     <nav class="menu">
@@ -110,6 +112,19 @@
                 <li>Received a $4,000 award for independent research on computational modeling frameworks</li>
             </ul>
         </div>
+        <script src="scripts/pram2mesaSlider.js"></script>
+        <!-- Credit: https://codyhouse.co/gem/css-jquery-image-comparison-slider/ -->
+        <figure class="cd-image-container">
+            <img src="img/resume/Allegheny_Flu_PRAM_out_med.png" alt="A graph of an SIRS flu model for Allegheny County using the PRAM framework">
+            <span class="cd-image-label" data-type="original">PRAM</span>
+           
+            <div class="cd-resize-img"> <!-- the resizable image on top -->
+               <img src="img/resume/Allegheny_Flu_ABM_batch_out_med_resized.png" alt="A graph of 10 runs of an SIRS flu model for Allegheny County using the ABM framework">
+               <span class="cd-image-label" data-type="modified">ABM</span>
+            </div>
+           
+            <span class="cd-handle"></span> <!-- slider handle -->
+         </figure> <!-- cd-image-container -->
     </div>
     <h2 class="resume-header">Projects</h2>
     <div class="resume-item">
