@@ -262,19 +262,19 @@ a[href*="github.com"] {
 
    .cd-image-container {
 	position: relative;
-	width: 90%;
 	max-width: 768px;
 	margin: 0em auto;
+	padding: 0;
   }
   .cd-image-container img {
 	display: block;
+	border-radius: 3px;
   }
   
   .cd-image-label {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	color: #ffffff;
 	padding: 1em;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
