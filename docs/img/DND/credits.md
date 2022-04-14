@@ -3,6 +3,17 @@ Art used following the [Wizards of the Coast Fan Content Policy](https://company
 Please note that not all images here are used.
 
 Art Title|Artist Credit
+---------|-------------
+Sending Stones|Dungeon Master's Guide p. 199
+Vegepygmy|Volo's Guide to Monsters p. 197
+Yellyark Launch Diagram|Mike Schley; Tomb of Annihilation p. 90
+Yuan-ti Malison|Monster Manual p. 309
+Volothamp Geddarm|Wizards of the Coast
+
+
+## Tomb of Annihilation Art
+
+Art Title|Artist Credit
 ---------|-----------
 Jungle|Eva Widermann
 Deep jungle background|Christopher Bradley
