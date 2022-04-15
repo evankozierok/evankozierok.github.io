@@ -5,7 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Interactive Resume | Evan Kozierok</title>
-    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <!-- prevent jquery mobile from randomly changing things -->
+    <!-- <script> 
+        $(document).on("mobileinit", function() {
+          $.mobile.keepNative = "input";
+        });
+    </script> -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- jquery mobile 1.4.5 isnt compatible with jquery 3 -->
+    <!-- ok jquery mobile is cursed, i'm disabling for now -->
+    <!-- <script src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script> -->
+    <!-- <script src="js/jquery.mobile-1.5.0-rc1.js"></script> -->
     
 </head>
 <body>
@@ -112,7 +122,7 @@
                 <li>Received a $4,000 award for independent research on computational modeling frameworks</li>
             </ul>
         </div>
-        <script src="scripts/pram2mesaSlider.js"></script>
+        <script src="js/pram2mesaSlider.js"></script>
         <!-- Credit: https://codyhouse.co/gem/css-jquery-image-comparison-slider/ -->
         <figure class="cd-image-container">
             <img src="img/resume/Allegheny_Flu_ABM_batch_out_med_resized.png" alt="A graph of 10 runs of an SIRS flu model for Allegheny County using the ABM framework">

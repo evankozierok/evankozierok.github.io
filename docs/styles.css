@@ -389,6 +389,7 @@ a[href*="github.com"] {
 	-ms-transform: translate3d(0, 0, 0) scale(0);
 	-o-transform: translate3d(0, 0, 0) scale(0);
 	transform: translate3d(0, 0, 0) scale(0);
+	touch-action: none;
   }
   .cd-handle.draggable {
 	/* change background color when element is active */
