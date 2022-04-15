@@ -57,10 +57,14 @@ body {
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
 	color: #222;
-	max-width: 90%;
 	background-color: #f8f8f8;
 	font-size: 14pt;
 	line-height: 1.25;
+}
+
+main {
+	max-width: 90%;
+	margin: 0 auto;
 }
 
 p {
@@ -458,7 +462,7 @@ a[href*="github.com"] {
 
 /* full screens */
 @media screen and (min-width: 769px) {
-	body {
+	main {
 		max-width: min(768px, 90%);
 	}
 }
