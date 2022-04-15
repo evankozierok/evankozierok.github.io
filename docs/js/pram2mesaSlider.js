@@ -138,9 +138,10 @@ function touchHandler(event) {
     event.preventDefault();
 }
 
-function touchInit() {
-    document.addEventListener("touchstart", touchHandler, true);
-    document.addEventListener("touchmove", touchHandler, true);
-    document.addEventListener("touchend", touchHandler, true);
-    document.addEventListener("touchcancel", touchHandler, true);
+function touchInit() { // add class names to limit the hackery to those classes
+    var handle = document.getElementsByClassName('cd-handle')[0];
+    handle.addEventListener("touchstart", touchHandler, true);
+    handle.addEventListener("touchmove", touchHandler, true);
+    handle.addEventListener("touchend", touchHandler, true);
+    handle.addEventListener("touchcancel", touchHandler, true);
 }
