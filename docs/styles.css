@@ -57,10 +57,14 @@ body {
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
 	color: #222;
-	max-width: 90%;
 	background-color: #f8f8f8;
 	font-size: 14pt;
 	line-height: 1.25;
+}
+
+main {
+	max-width: 90%;
+	margin: 0 auto;
 }
 
 p {
@@ -145,6 +149,7 @@ a[href*="github.com"] {
 .menu {
 	display: grid;
 	height: auto;
+	min-height: 2em;
 	/* justify-content: space-around; */
 	grid-template-columns: repeat(5, 1fr);
 }
@@ -157,7 +162,7 @@ a[href*="github.com"] {
 	text-decoration: none;
 	background-color: #74bcff;
 	border: solid #444444;
-	border-width: 2px 1px;
+	border-width: 0 1px 2px 1px;
 	z-index: 1;
 
 }
@@ -168,10 +173,10 @@ a[href*="github.com"] {
 
 
 .menu a:first-child {
-	border-left-width: 2px;
+	border-left-width: 0px;
 }
 .menu a:last-child {
-	border-right-width: 2px;
+	border-right-width: 0px;
 }
 
 .menu div {
@@ -230,6 +235,7 @@ a[href*="github.com"] {
 .resume-item > figure, .edu-overview > figure, .miscwork-item > figure {
 	margin: 0;
 	grid-column: 1 / -1;
+	padding: 0;
 }
 
 .item-name *:first-child {
@@ -264,7 +270,6 @@ a[href*="github.com"] {
 	position: relative;
 	max-width: 768px;
 	margin: 0em auto;
-	padding: 0;
   }
   .cd-image-container img {
 	display: block;
@@ -458,7 +463,7 @@ a[href*="github.com"] {
 
 /* full screens */
 @media screen and (min-width: 769px) {
-	body {
+	main {
 		max-width: min(768px, 90%);
 	}
 }
