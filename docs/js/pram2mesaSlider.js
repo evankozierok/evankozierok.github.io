@@ -120,6 +120,7 @@ jQuery(document).ready(function($){
 });
 
 // magic to make touch events simulate mouse events
+// credit: https://stackoverflow.com/questions/5186441/javascript-drag-and-drop-for-touch-devices
 function touchHandler(event) {
     var touch = event.changedTouches[0];
 
