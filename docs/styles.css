@@ -71,8 +71,11 @@ table {
 	--lgt-8: 80%;
 	--lgt-9: 90%;
 	--lgt-10: 100%;
+	--lgt-95: 95%;
+	--lgt-98: 98%;
 
 
+	--sat-05: 5%;
 	--sat-0: 0%;
 	--sat-1: 10%;
 	--sat-2: 20%;
@@ -84,6 +87,13 @@ table {
 	--sat-8: 80%;
 	--sat-9: 90%;
 	--sat-10: 100%;
+
+	/* default page hues */
+	--hue-home: var(--hue-red);
+	--hue-about: var(--hue-orange);
+	--hue-resume: var(--hue-yellow);
+	--hue-misc: var(--hue-green);
+	--hue-dnd: var(--hue-blue);
 }
 
 /* General styles */
@@ -92,7 +102,7 @@ body {
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
 	color: #222;
-	background-color: #f8f8f8;
+	background-color: hsl(var(--hue-page, 210), var(--sat-9), var(--lgt-98)); /* #f8f8f8; */
 	font-size: 14pt;
 	line-height: 1.25;
 }
@@ -474,7 +484,8 @@ a[href*="github.com"] {
 .session-log {
 	padding: 1em;
 	margin: 0.5em;
-	background-color: bisque;
+	/* background-color: bisque; */
+	background-color: hsl( var(--hue-page), var(--sat-6), var(--lgt-8) );
 	border: 2px solid black;
 	border-radius: 5px;
 }
