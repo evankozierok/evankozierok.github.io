@@ -97,19 +97,26 @@ table {
 }
 
 /* General styles */
+html {
+	height: 100%;
+}
 
 body {
+	display: flex;
+	flex-direction: column;
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
 	color: #222;
 	background-color: hsl(var(--hue-page, 210), var(--sat-9), var(--lgt-98)); /* #f8f8f8; */
 	font-size: 14pt;
 	line-height: 1.25;
+	height: 100%;
 }
 
 main {
 	max-width: 90%;
 	margin: 0 auto;
+	flex: 1 0 auto;
 }
 
 p {
@@ -249,6 +256,38 @@ a[href*="github.com"] {
 .menu div {
 	text-align: center;
 	width: 100%;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	justify-items: center;
+	height: 50px;
+	background-color: hsl( var(--hue-page), var(--sat-4), var(--lgt-4) );
+	flex-shrink: 0;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+}
+
+.links > a {
+	margin: 0 8px;
+}
+
+#github-profile {
+	background: url("img/GitHub-Mark/Vector/SVG/GitHub-Mark-Small-Light.svg") 0 50%/32px no-repeat;
+	background-color: none;
+	padding: 5px;
+	border-width: 0;
+	height: 32px;
+	width: 32px;
+}
+
+#copyright {
+	padding-left: 8px;
 }
 
 /* Homepage */
