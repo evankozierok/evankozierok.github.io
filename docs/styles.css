@@ -131,13 +131,18 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 1.5em 0;
 	text-align: center;
 	font-weight: bold;
+	text-shadow: -1px -1px 1px hsl(var(--hue-page), var(--sat-7), var(--lgt-6));
 }
 
 h1 {
 	font-size: 300%;
+	text-shadow: -3px -3px 1px hsl(var(--hue-page), var(--sat-7), var(--lgt-6));
+
 }
 h2 {
 	font-size: 200%;
+	text-shadow: -2px -2px 1px hsl(var(--hue-page), var(--sat-7), var(--lgt-6));
+
 }
 h3 {
 	font-size: 150%;
@@ -159,7 +164,7 @@ figure {
 
 figcaption {
 	text-align: center;
-	background-color: #EEE;
+	background-color: hsl( var(--hue-page), var(--sat-10), var(--lgt-95) );
 	padding: 0.5em;
 }
 
@@ -277,8 +282,8 @@ footer {
 	align-items: center;
 	justify-content: space-between;
 	justify-items: center;
-	height: 50px;
-	background-color: hsl( var(--hue-page), var(--sat-4), var(--lgt-4) );
+	min-height: 50px;
+	background-color: hsl( var(--hue-page), var(--sat-5), var(--lgt-6) );
 	flex-shrink: 0;
 	margin-top: 1em;
 }
@@ -345,11 +350,26 @@ footer {
 	max-width: 33%;
 	/* flex: 0 1 25%; */
 	float: left;
+	position: relative;
 	
 }
 
 #headshot img {
 	border-radius: 25%;
+}
+
+#headshot::before {
+	background-color: hsl(var(--hue-page), var(--sat-7), var(--lgt-6));
+	content: "";
+	margin: 0 auto;
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	height: 78%;
+	width: 78%;
+	z-index: -2;
+	/* 25% of parent (100%) = 32% of 78% */
+	border-top-left-radius: calc(32% + 3px);
 }
 
 /* About me */
@@ -377,13 +397,13 @@ footer {
 	margin: 1em 0;
 	border: 2px solid #666666;
 	border-radius: 5px;
-	background-color: #DDD;
+	background-color: hsl( var(--hue-page), var(--sat-4), var(--lgt-9) );
 }
 
 .resume-item > *, .edu-overview > *, .miscwork-item > * {
 	border: 2px solid #444444;
 	border-radius: 5px;
-	background-color: #CCC;
+	background-color: hsl( var(--hue-page), var(--sat-4), var(--lgt-8) );
 	padding: 1em;
 }
 
@@ -409,11 +429,11 @@ footer {
 #the-king-of-the-jungle audio::-webkit-media-controls-panel {
 	/* this rule colors the actual controls, 
 	   while the `audio` rule styles the containing block */
-	background-color: #EEE;
+	background-color: hsl( var(--hue-page), var(--sat-10), var(--lgt-95) );
 }
 
 #the-king-of-the-jungle audio {
-	background-color: #EEE;
+	background-color: hsl( var(--hue-page), var(--sat-10), var(--lgt-95) );
 	/* border-radius: 0px; */
 	width: 100%;
 }
