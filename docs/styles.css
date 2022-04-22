@@ -49,6 +49,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Custom reset */
+
+
 /* ============================= */
 
 /* Color scheme vars */
@@ -192,6 +196,16 @@ a[href*="github.com"] {
 	text-decoration: none;
 }
 
+.copy-button {
+	/* filter to change SVG color to match GitHub's #191717 */
+	filter: invert(1%) sepia(61%) saturate(390%) hue-rotate(314deg) brightness(99%) contrast(83%);
+	background: url("img/clone-icon.svg") 0 50%/32px no-repeat;
+	height: 32px;
+	width: 32px;
+	border: 0;
+	cursor: pointer;
+}
+
 .bottom-spacer {
 	height: 2em;
 }
@@ -286,8 +300,42 @@ footer {
 	width: 32px;
 }
 
+#linkedin-profile {
+	/* filter to change SVG color to match GitHub's #191717 */
+	filter: invert(1%) sepia(61%) saturate(390%) hue-rotate(314deg) brightness(99%) contrast(83%);
+	display: block;
+	background: url("img/LinkedIn-Logos/In/Print/PMS/In-Large-Black.svg") 0 50%/32px no-repeat;
+	background-color: none;
+	padding: 5px;
+	height: 32px;
+	width: 32px;
+}
+
+#email-link {
+	color: inherit;
+	text-decoration: none;
+}
+
 #copyright {
 	padding-left: 8px;
+}
+
+.copy-container {
+	display: flex;
+	align-items: center;
+}
+
+.copy-container > * {
+	padding: 5px;
+}
+
+.ui-dialog {
+	position: absolute;
+}
+
+.ui-dialog-titlebar-close {
+	height: 0;
+	display: none;
 }
 
 /* Homepage */
