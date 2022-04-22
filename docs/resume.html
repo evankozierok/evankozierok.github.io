@@ -17,6 +17,8 @@
         });
     </script> -->
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.13.1/jquery-ui.min.js"></script>
+    <script src="js/utilities.js"></script>
     <!-- jquery mobile 1.4.5 isnt compatible with jquery 3 -->
     <!-- ok jquery mobile is cursed, i'm disabling for now -->
     <!-- <script src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script> -->
@@ -199,5 +201,17 @@
     </main>
     <!-- awkward spacing fixer. Will probably move into a footer later -->
     <div class="bottom-spacer"></div>
+    <footer>
+        <p id="copyright">&copy; Evan Kozierok 2022</p>
+        <div class="links">
+            <div class="copy-container">
+                <button id="email-copy" class="copy-button" onclick="copyText('email-link')"></button>
+                <div id="copied-dialog">Copied!</div>
+                <a id="email-link" href="mailto:evan.kozierok@gmail.com">evan.kozierok@gmail.com</a>
+            </div>
+            <a id="linkedin-profile" href="https://linkedin.com/in/evankozierok" target="_blank"></a>
+            <a id="github-profile" target="_blank" href="https://github.com/evankozierok"></a>
+        </div>
+    </footer>
 </body>
 </html>

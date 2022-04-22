@@ -280,6 +280,7 @@ footer {
 	height: 50px;
 	background-color: hsl( var(--hue-page), var(--sat-4), var(--lgt-4) );
 	flex-shrink: 0;
+	margin-top: 1em;
 }
 
 .links {
