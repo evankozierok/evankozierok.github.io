@@ -209,6 +209,7 @@ a[href*="github.com"] {
 	width: 32px;
 	border: 0;
 	cursor: pointer;
+	margin: 0 16px;
 }
 
 .bottom-spacer {
@@ -279,31 +280,37 @@ a[href*="github.com"] {
 
 footer {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: space-between;
 	justify-items: center;
+	flex-direction: column;
 	min-height: 50px;
 	background-color: hsl( var(--hue-page), var(--sat-5), var(--lgt-6) );
 	flex-shrink: 0;
 	margin-top: 1em;
+	padding-top: 1em;
 }
 
-.links {
+footer > * {
+	margin: 8px;
+}
+
+.socials {
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
 }
 
-.links > a {
-	margin: 0 8px;
+.socials > * {
+	padding: 8px;
 }
 
 #github-profile {
 	background: url("img/GitHub-Mark/Vector/SVG/GitHub-Mark-Small-Light.svg") 0 50%/32px no-repeat;
-	background-color: none;
-	padding: 5px;
 	border-width: 0;
 	height: 32px;
 	width: 32px;
+	padding: 0;
 }
 
 #linkedin-profile {
@@ -311,8 +318,6 @@ footer {
 	filter: invert(1%) sepia(61%) saturate(390%) hue-rotate(314deg) brightness(99%) contrast(83%);
 	display: block;
 	background: url("img/LinkedIn-Logos/In/Print/PMS/In-Large-Black.svg") 0 50%/32px no-repeat;
-	background-color: none;
-	padding: 5px;
 	height: 32px;
 	width: 32px;
 }
@@ -329,10 +334,6 @@ footer {
 .copy-container {
 	display: flex;
 	align-items: center;
-}
-
-.copy-container > * {
-	padding: 5px;
 }
 
 .ui-dialog {
@@ -642,6 +643,10 @@ footer {
 	main {
 		max-width: min(768px, 90%);
 	}
+
+	footer {
+		flex-direction: row;
+		align-items: center;
+	}
 }
 
-/* 
