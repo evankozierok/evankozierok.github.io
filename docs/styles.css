@@ -378,11 +378,12 @@ footer > * {
 
 .about {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
+	flex-direction: column;
 }
 
 .about figure {
-	max-width: 33%;
+	max-width: 90%;
 }
 
 .about:nth-of-type(even) figure {
@@ -393,7 +394,7 @@ footer > * {
 
 .resume-item, .edu-overview, .miscwork-item {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1fr;
 	gap: 1em;
 	padding: 1em;
 	margin: 1em 0;
@@ -419,11 +420,6 @@ footer > * {
 	font-weight: bold;
 }
 
-.item-context {
-	text-align: right;
-
-}
-
 .item-desc {
 	grid-column: 1 / -1;
 }
@@ -445,7 +441,8 @@ footer > * {
 
    .cd-image-container {
 	position: relative;
-	max-width: 768px;
+	/* dont ask */
+	max-width: min(calc(90vw - 2em - 6px), 768px);
 	margin: 0em auto;
   }
   .cd-image-container img {
@@ -554,15 +551,16 @@ footer > * {
   }
   .cd-handle {
 	position: absolute;
-	height: 44px;
-	width: 44px;
+	height: 22px;
+	width: 22px;
 	/* center the element */
 	left: 50%;
 	top: 50%;
-	margin-left: -22px;
-	margin-top: -22px;
+	margin-left: -11px;
+	margin-top: -11px;
 	border-radius: 50% !important; /* overrides "figure > *:last-child */
 	background: #dc717d url("img/cd-arrows.svg") no-repeat center center;
+	background-size: 100% 100%;
 	cursor: move;
 	box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 	opacity: 0;
@@ -658,5 +656,31 @@ footer > * {
 		max-width: 33%;
 		float: left;
 	}
+
+	.about {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.about figure {
+		max-width: 40%;
+	}
+
+	.resume-item, .edu-overview, .miscwork-item {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+
+	.item-context {
+		text-align: right;
+	}
+
+	.cd-handle {
+		width: 44px;
+		height: 44px;
+		margin-left: -22px;
+		margin-top: -22px;
+	}
+	
 }
 
