@@ -347,12 +347,13 @@ footer > * {
 
 /* Homepage */
 
+.greeting {
+	font-size: 500%;
+	margin: 0.5em 0;
+}
+
 #headshot {
-	max-width: 33%;
-	/* flex: 0 1 25%; */
-	float: left;
 	position: relative;
-	
 }
 
 #headshot img {
@@ -647,6 +648,15 @@ footer > * {
 	footer {
 		flex-direction: row;
 		align-items: center;
+	}
+}
+
+/* tablets AND full screens */
+
+@media screen and (min-width: 481px) {
+	#headshot {
+		max-width: 33%;
+		float: left;
 	}
 }
 
