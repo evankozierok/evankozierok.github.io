@@ -178,10 +178,7 @@ figure > *:last-child {
 	border-bottom-right-radius: 5px;
 }
 
-.side-by-side {
-	display: flex;
-	justify-items: center;	
-}
+
 
 .side-by-side figure {
 	min-width: 0;
@@ -414,6 +411,8 @@ footer > * {
 	margin: 0;
 	grid-column: 1 / -1;
 	padding: 0;
+	/* magic calculation that is just right: 90vw = 90% of root, - 2em for padding, -6px for borders. Maybe a few px off? */
+	max-width: min(calc(90vw - 2em - 6px), 768px);
 }
 
 .item-name *:first-child {
@@ -441,8 +440,6 @@ footer > * {
 
    .cd-image-container {
 	position: relative;
-	/* dont ask */
-	max-width: min(calc(90vw - 2em - 6px), 768px);
 	margin: 0em auto;
   }
   .cd-image-container img {
@@ -602,6 +599,10 @@ footer > * {
 	font-size: 16pt;
 }
 
+.session-log figure {
+	margin: 1em 0;
+}
+
 .strikeout {
 	text-decoration: line-through;
 }
@@ -682,5 +683,13 @@ footer > * {
 		margin-top: -22px;
 	}
 	
+	.side-by-side {
+		display: flex;
+		justify-items: center;	
+	}
+
+	.side-by-side figure:not(:last-child) {
+		margin-right: 1em;
+	}
 }
 
